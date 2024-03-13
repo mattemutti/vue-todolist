@@ -14,7 +14,7 @@ createApp({
 				},
 				{
 					text: 'mobile app luaunch',
-					done: false,
+					done: true,
 				},
 				{
 					text: 'Interview John H.',
@@ -22,7 +22,7 @@ createApp({
 				},
 				{
 					text: 'Summit update to mobile storefonts',
-					done: false,
+					done: true,
 				},
 				{
 					text: 'Schedule Meeting with Alex',
