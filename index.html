@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TodoList</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+
+<body>
+<div id="app">
+{{message}}
+    
+    <header class="site-header">
+        <div class="logosite">
+            <img class="logo" src="./assets/img/Logo.png" alt="logo toboolist">
+            <span id="text-logo"><b>TodoList</b></span>
+        </div>
+    </header>
+    <!-- site header -->
+    
+    
+    
+    <div class="bg-color">
+        <main class="site-main">
+            <div class="container">
+                <button class="button-task" type="button">Add Task</button>
+                <button class="button-section">Add Section</button>
+            </div>
+        </main>
+        
+        <div class="container2">
+            <span class="title">▼ <b>New Task</b></span>
+            <div class="text">
+                <span class="freccia">✓</span> Quarterly Newsletter <button class="editorial">Editorial</button>
+            </div>
+        </div>
+        <!-- section New task -->
+        
+        <div class="container3">
+            <span class="title">▼ <b>Today</b></span>
+            <div class="text">
+                <span class="freccia">✓</span> Recruiting Blog Post <button class="editorial">Editorial</button><br><br>
+                <span class="freccia">✓</span> mobile app luaunch <button class="goals">q1 goals</button><br><br>
+                <span class="x"> X</span> Interview John H. <button class="recruiting">Recruiting</button><br><br>
+                <span class="freccia">✓</span> Summit update to mobile storefonts <button class="editorial">Editorial</button><br><br>
+                
+            </div>
+        </div>
+        <!-- section today -->
+        
+        <div class="container4">
+            <span class="title">▼ <b>Upcoming</b></span>
+            <div class="text">
+                <span class="x"> X</span>  Schedule Meeting with Alex <br><br>
+                <span class="freccia">✓</span> Hompage refresh <button class="website">Website</button><br><br>
+                <span class="freccia">✓</span> On board new sales team members <button class="sales">Sales</button><br><br>
+                <span class="freccia">✓</span> Review editorial calendar <button class="editorial">Editorial</button><br><br>
+                
+            </div>
+        </div>
+        <!-- section upcoming-->
+        
+    </div>
+    <!-- site main -->
+    
+</div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

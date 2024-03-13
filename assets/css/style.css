@@ -1,0 +1,212 @@
+/* rule general */
+
+:root{
+    --bool-primary: rgba(68, 72, 81, 1);
+    --bool-secondary: rgba(215, 219, 222, 1);
+    --bool-accent1: rgba(156, 114, 228, 1);
+    --bool-accent2: rgba(176, 201, 38, 1);
+    --bool-accent3: rgba(216, 99, 161, 1);
+    --bool-accent4: rgba(242, 158, 51, 1);
+    --bool-accent5: rgba(246, 248, 249, 1); 
+}
+
+body{
+    margin: 0;
+}
+
+.site-header{
+    padding: 1rem;
+}
+
+.logo{
+    width: 100px;
+    vertical-align: middle; 
+}
+
+#text-logo{
+    color: black;
+    font-size: 56px;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+.bg-color{
+    background-color:  rgba(246, 248, 249, 1);
+    padding-top: 2rem;
+    padding: 1rem;
+    padding-bottom: 1px;
+    
+}
+
+
+/* #region containe main site */
+
+
+.container{
+    width: 1000px;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: white;
+    padding: 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-top: 2rem;
+    border-radius: 12px;
+}
+
+.container2{
+    width: 1000px;
+    margin: auto;
+    margin-top: 2px;
+    background-color: white;
+    padding: 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-top: 2rem;
+    border-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+.container3{
+    width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    background-color: white;
+    padding: 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-top: 2rem;
+}
+
+
+.container4{
+    width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    background-color: white;
+    padding: 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-top: 2rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;   
+}
+
+
+/* #endregion containe main site */
+
+
+.title{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.text{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 1.5rem;
+}
+
+
+.freccia{
+    color: green;
+    border-style: solid;
+    border-color: green ;
+    border-radius: 50%;
+}
+
+
+
+.x{
+    color: red;
+    border-style: solid;
+    border-color: red ;
+    border-radius: 50%;
+}
+
+
+
+/* #region button */
+
+.button-task{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(111, 149, 226);
+    border-radius: 8px;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-color: rgb(111, 149, 226);
+    border: none;
+}
+
+.button-section{
+    font-family: sans-serif;
+    color: rgba(215, 219, 222, 1);
+    background-color:white;
+    border-radius: 12px;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-color: rgb(241, 241, 241);
+    
+}
+
+.editorial{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(111, 149, 226);
+    border-radius: 12px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    border-color:rgb(111, 149, 226) ;
+}
+
+.goals{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(226, 148, 190);
+    border-radius: 12px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    border-color:rgb(226, 148, 190) ;
+}
+
+.recruiting{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(77, 193, 183);
+    border-radius: 12px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    border-color:rgb(77, 193, 183) ;
+}
+
+.website{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(216, 99, 161, 1);
+    border-radius: 12px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    border-color:rgba(216, 99, 161, 1) ;
+}
+
+.sales{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(236, 182, 56);
+    border-radius: 12px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    border-color:rgb(236, 182, 56) ;
+}
+
+/* #endregion button */
