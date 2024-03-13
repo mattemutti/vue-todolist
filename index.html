@@ -29,21 +29,27 @@
 
 
         <div class="bg-color">
-            
-                <div class="container p-4">
+
+            <div class="container p-4">
+                <div class="raw">
+                    <div class="p-2">
+                        <input type="text" v-model="textNewTask" placeholder="Inserisci Task" @keyup.enter="addTask()">
+                    </div>
                     <div class="raw">
-                        <button class="button-task m-2" type="button">Add Task</button>
+                        <button class="button-task m-2" type="button" @click="addTask()">Add Task</button>
                         <button class="button-section m-2">Add Section</button>
                     </div>
                 </div>
+            </div>
             <!-- Section button add tasks -->
 
-
-            <div class="container p-4">
+ 
+            <div class="container">
                 <h3 class="title pb-3"><i class="fa-solid fa-arrow-down"></i> <b>Tasks List</b></h3>
                 <ul>
-                    <div v-for="(task, index) in list"  @click="removeTask(index)">
-                        <li v-if="list[index].done === true" style="text-decoration: line-through;">{{task.text}}<i class="fa-solid fa-x p-2"></i></li>
+                    <div v-for="(task, index) in list" @click="removeTask(index)">
+                        <li v-if="list[index].done === true" style="text-decoration: line-through;">{{task.text}}<i
+                                class="fa-solid fa-x p-2"></i></li>
                         <li v-else>{{task.text}} <span class=""><i class="fa-solid fa-x"></i></span></li>
                     </div>
                 </ul>

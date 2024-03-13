@@ -3,6 +3,11 @@ const { createApp } = Vue
 createApp({
 	data() {
 		return {
+			newTask: {
+				text: '',
+				done: false,
+			},
+			textNewTask: '',
 			list: [
 				{
 					text: 'Quarterly Newsletter',
@@ -50,23 +55,22 @@ createApp({
 		removeTask(index) {
 			console.log('remove this task', index);
 			this.list.splice(index, 1);
-
 		},
 
 		addTask() {
-
+			//console.log('aggiungi questa task', this.newTask);
+			//console.log(this.textNewTask);
+			this.newTask.text = this.textNewTask;
+			//console.log(this.newTask);
+			this.list.unshift(this.newTask);			
 		}
-
-
+ 
 	},
-
+ 
 	//qui nell' hook mounted
 	mounted() {
 		console.log(this.list);
 		//console.log("ciao")
 	}
-
-
-
 
 }).mount('#app')
