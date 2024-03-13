@@ -29,25 +29,27 @@
 
 
         <div class="bg-color">
-            <main class="site-main">
-                <div class="container">
-                    <button class="button-task" type="button">Add Task</button>
-                    <button class="button-section">Add Section</button>
+            
+                <div class="container p-4">
+                    <div class="raw">
+                        <button class="button-task m-2" type="button">Add Task</button>
+                        <button class="button-section m-2">Add Section</button>
+                    </div>
                 </div>
-            </main>
             <!-- Section button add tasks -->
 
-            <div class="container2">
-                <span class="title"><i class="fa-solid fa-arrow-down"></i> <b>Tasks List</b></span>
+
+            <div class="container p-4">
+                <h3 class="title pb-3"><i class="fa-solid fa-arrow-down"></i> <b>Tasks List</b></h3>
                 <ul>
-                    <div v-for="(task, index) in list">
-                        <li v-if="list[index].done === true" style="text-decoration: line-through;">{{task.text}}</li>
-                        <li v-else >{{task.text}}</li>
+                    <div v-for="(task, index) in list"  @click="removeTask(index)">
+                        <li v-if="list[index].done === true" style="text-decoration: line-through;">{{task.text}}<i class="fa-solid fa-x p-2"></i></li>
+                        <li v-else>{{task.text}} <span class=""><i class="fa-solid fa-x"></i></span></li>
                     </div>
                 </ul>
             </div>
         </div>
-        <!-- site main -->
+        <!-- section task -->
 
     </div>
 

@@ -41,23 +41,32 @@ createApp({
 					done: false,
 				},
 			],
+		}
+	},
 
-			//Qui andranno le funzioni
-			methods: {
+	//Qui le funzioni
+	methods: {
 
+		removeTask(index) {
+			console.log('remove this task', index);
+			this.list.splice(index, 1);
 
+		},
 
-			},
-
-			//qui nell' hook mounted
-			mounted() {
-				//console.log(this.list),
-				//console.log("ciao")
-			}
-
-
-
+		addTask() {
 
 		}
+
+
+	},
+
+	//qui nell' hook mounted
+	mounted() {
+		console.log(this.list);
+		//console.log("ciao")
 	}
+
+
+
+
 }).mount('#app')

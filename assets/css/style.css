@@ -10,6 +10,10 @@
     --bool-accent5: rgba(246, 248, 249, 1); 
 }
 
+/* *{
+  border: 1px dashed black;
+} */
+
 body{
     margin: 0;
 }
@@ -42,7 +46,7 @@ body{
 /* #region containe main site */
 
 
-.container{
+/* .container{
     width: 1000px;
     margin: auto;
     margin-top: 5rem;
@@ -52,7 +56,7 @@ body{
     border-bottom: 3px solid rgb(255, 255, 255);
     padding-top: 2rem;
     border-radius: 12px;
-}
+} */
 
 .container2{
     width: 1000px;
@@ -146,13 +150,15 @@ body{
 
 .button-section{
     font-family: sans-serif;
-    color: rgba(215, 219, 222, 1);
+    color: rgb(42, 46, 161);
     background-color:white;
     border-radius: 12px;
     width: 8rem;
     height: 2.5rem;
     font-size: 1rem;
     border-color: rgb(241, 241, 241);
+
+    display: none;
     
 }
 
