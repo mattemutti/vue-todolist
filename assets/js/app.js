@@ -63,6 +63,16 @@ createApp({
 			this.newTask.text = this.textNewTask;
 			//console.log(this.newTask);
 			this.list.unshift(this.newTask);			
+		},
+
+		lineTr(index) {
+			//console.log('hai cliccato il testo', this.list[index].done);
+			
+			if (this.list[index].done === false){
+				this.list[index].done = true;
+			} else {
+				this.list[index].done = false;
+			}
 		}
  
 	},
